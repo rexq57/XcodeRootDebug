@@ -74,9 +74,9 @@ Repo：https://repo.byteage.com
 cd ~/Desktop
 ldid -Sdebugserver.entitlements debugserver
 ```
-5. Copy the signed `debugserver` to the `/usr/bin/debugserver` path of the jailbroken device, and use the root user to give it executable permissions
+5. Copy the signed `debugserver` to the `/var/mobile/debugserver` path of the jailbroken device, and use the root user to give it executable permissions
 ```shell
-chmod +x /usr/bin/debugserver
+chmod +x /var/mobile/debugserver
 ```
 6. Execute `debugserver` to ensure normal operation
 ```shell
