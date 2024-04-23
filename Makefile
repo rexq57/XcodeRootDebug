@@ -3,7 +3,7 @@ THEOS_DEVICE_PORT = 2222
 
 ARCHS = arm64 arm64e
 
-TARGET = iphone:clang:14.5:9.0
+TARGET := iphone:clang:16.5:7.0
 INSTALL_TARGET_PROCESSES = lockdownd
 
 
@@ -13,6 +13,7 @@ TWEAK_NAME = XcodeRootDebug
 
 XcodeRootDebug_FILES = Tweak.x
 XcodeRootDebug_CFLAGS = -fobjc-arc
+XcodeRootDebug_LDFLAGS = -L$(THEOS)/lib -lsubstrate
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

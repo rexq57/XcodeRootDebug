@@ -20,7 +20,7 @@ static void reloadSettings() {
 	enabled = (enabledValue)? [enabledValue boolValue] : YES;
 	debugserverPath = [settings objectForKey:@"debugserverPath"];
 	if(!debugserverPath.length) {
-		debugserverPath = @"/usr/bin/debugserver";
+		debugserverPath = @"/var/mobile/debugserver";
 	}
 	NSNumber * isRootUserValue = (NSNumber *)[settings objectForKey:@"isRootUser"];
 	isRootUser = (isRootUserValue)? [isRootUserValue boolValue] : YES;
